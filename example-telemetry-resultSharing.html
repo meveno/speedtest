@@ -162,8 +162,12 @@ function msToAmount(s){
 var w=null; //speedtest worker
 var data=null; //data from worker
 var testParameters={
-	telemetry_level:"basic"
+	telemetry_level: "basic",
 	//Optional: add more test parameters here
+	url_dl: "garbage.jsp",
+	url_ul: "empty.jsp",
+	url_ping: "empty.jsp",
+	url_getIp: "getIP.jsp"
 }
 function startStop(){
 	if(w!=null){

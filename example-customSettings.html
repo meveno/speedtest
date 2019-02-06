@@ -116,7 +116,11 @@ var parameters={ //custom test parameters. See doc.md for a complete list
 	time_dl_max: 20, //download test lasts up to 20 seconds
 	time_ul_max: 20, //upload test lasts up to 20 seconds
 	count_ping: 15, //ping+jitter test does 15 pings
-    getIp_ispInfo: false //will only get IP address without ISP info
+	getIp_ispInfo: false, //will only get IP address without ISP info
+	url_dl: "garbage.jsp",
+	url_ul: "empty.jsp",
+	url_ping: "empty.jsp",
+	url_getIp: "getIP.jsp"
 };
 function startStop(){
 	if(w!=null){
