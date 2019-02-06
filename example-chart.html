@@ -230,7 +230,8 @@
                 }
                 ip.textContent = data.clientIp
             }
-            w.postMessage('start')
+            // w.postMessage('start')
+            w.postMessage('start {"url_dl": "garbage.jsp", "url_ul": "empty.jsp", "url_ping": "empty.jsp", "url_getIp": "getIP.jsp"}');
         }
         function abortTest() {
             if (w) w.postMessage('abort')

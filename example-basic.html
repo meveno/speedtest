@@ -30,7 +30,8 @@
             document.getElementById('ping').textContent = data.pingStatus + ' ms, ' + data.jitterStatus + ' ms jitter'
             document.getElementById('ip').textContent = data.clientIp
         }
-        w.postMessage('start') // start the speedtest (default params. keep garbage.php and empty.dat in the same directory as the js file)
+        // w.postMessage('start') // start the speedtest (default params. keep garbage.php and empty.dat in the same directory as the js file)
+        w.postMessage('start {"url_dl": "garbage.jsp", "url_ul": "empty.jsp", "url_ping": "empty.jsp", "url_getIp": "getIP.jsp"}')
     </script>
 
 	<a href="https://github.com/adolfintel/speedtest">Source code</a>
