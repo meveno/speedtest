@@ -140,7 +140,7 @@ function startStop(){
 	}else{
 		//test is not running, begin
 		w=new Worker('speedtest_worker.min.js');
-		w.postMessage('start'); //Add optional parameters as a JSON object to this command
+		w.postMessage('start {"url_dl": "garbage.jsp", "url_ul": "empty.jsp", "url_ping": "empty.jsp", "url_getIp": "getIP.jsp"}'); //Add optional parameters as a JSON object to this command
 		I("startStopBtn").className="running";
 		w.onmessage=function(e){
 			var data=JSON.parse(e.data);
